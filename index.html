@@ -199,13 +199,84 @@
 		<!-- modal -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				
-				<div class="left">
+				<div class="form">
+				<div class="right">
 					<button class="modal-button" data-modal-close>
 						<svg class="modal-close" width="8px" height="8px">
 							<use href="./images/icons.svg#icon-close-button"></use>
 						</svg>
 					</button>
+				</div>
+				
+				
+					<h2 class="modal-title">Leave your contacts and we will call you back</h2>
+				<form class="modal-form">
+					<ul class="list">
+						
+						<li class="list-input">
+							<label for="name" class="form-label">Name</label>
+							<div class="svg-position">
+								<input 
+								type="text" 
+								id="name" 
+								required 
+								class="form-input">
+								<svg width="12px" height="12px" class="icon">
+									<use href="./images/icons.svg#icon-name"></use>
+								</svg>
+							</div>
+							
+						</li>
+						<li class="list-input">
+							<label for="phone" class="form-label">Phone</label>
+							<div class="svg-position">
+								<input 
+								type="text" 
+								id="phone" 
+								required 
+								class="form-input">
+								<svg width="12px" height="12px" class="icon">
+									<use href="./images/icons.svg#icon-phone"></use>
+								</svg>
+							</div>	
+						</li>
+						<li class="list-input">
+							<label for="email" class="form-label">Email</label>
+							<div class="svg-position">
+								<input 
+								type="email" 
+								id="email" 
+								required 
+								class="form-input">
+								<svg width="12px" height="12px" class="icon">
+									<use href="./images/icons.svg#icon-email"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="list-input">
+							<label for="comment" class="form-label">Comment</label>
+							<textarea 
+							name="comment" 
+							id="comment"  
+							class="modal-textarea" 
+							placeholder="Text input"></textarea>
+						</li>
+					</ul>
+						
+							<div class="check-box">
+								
+								<label  class="form-label">
+									<input type="checkbox" class="checkbox">	
+									<span class="icon"></span>	
+									I accept the terms and conditions of the <a href="#" class="href-policy"> Privacy Policy</a>
+								</label>
+							</div>
+	
+					<div class="form-div-button">
+						<button type="submit" class="form-button">Send</button>
+					</div>
+					
+				</form>
 				</div>
 
 			</div>
@@ -215,6 +286,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer-div">
+
 					<div class="footer-part">
 						<a href="./index.html" class="logo link"><span class="blue-logo">WEB</span>STUDIO</a>
 						<p class="footer-text">
@@ -230,6 +302,20 @@
 							<li class="list social-item"><a href="#" class="social-href"> <svg class="social-svg" > <use href="./images//icons.svg#icon-linkedin" ></use> </svg></a></li>
 						</ul>
 					</div>	
+					<div class="footer-part">
+						<form>
+							<div class="column">
+								<label  for="subscribe">Subscribe</label>
+							</div>
+								<input type="email" placeholder="E-mail" id="subscribe" class="footer-email" required>
+							<button class="button-form">Subscribe
+								<svg class="icon">
+									<use href="./images/icons.svg#icon-icon-send " ></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+
 				</div>
 			</div>
 
